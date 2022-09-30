@@ -1,3 +1,7 @@
 <template>
-    <Banner />
+    <div class="wine-details">
+        <Banner />
+        <WineCard />
+    </div>
+    
 </template>

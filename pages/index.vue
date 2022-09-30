@@ -1,5 +1,6 @@
 <template>
   <Carousel/>
+  <!-- présentation ! -->
 </template>
 
 <script>
