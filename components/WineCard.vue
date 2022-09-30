@@ -2,17 +2,17 @@
     <div class="container">
         <div class="card m-3">
             <div class="row">
-                <div class="col-8">
+                <div class="col-sm-8">
                     <img src="../assets/banner.jpg" class="img-thumbnail rounded-start" alt="">
                 </div>
-                    <div class="col-2">
+                    <div class="col-sm-2">
                         <div class="card-body">
                             <p class="text-muted">Type</p>
                             <p class="text-muted">Years</p>
                             <p class="text-muted">Origin</p>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-sm-2">
                         <div class="card-body">
                             <p class="text-muted">Capacity</p>
                             <p class="text-muted">Alcohol</p>
