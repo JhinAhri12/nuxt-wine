@@ -2,13 +2,13 @@
     <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="../assets/wine1.jpg" class="d-block w-100" alt="wine">
+            <img src="./../assets/wine1.jpg" class="d-block w-100" alt="wine">
             </div>
             <div class="carousel-item">
-            <img src="../assets/wine2.jpg" class="d-block w-100" alt="wine">
+            <img src="./../assets/wine2.jpg" class="d-block w-100" alt="wine">
             </div>
             <div class="carousel-item">
-            <img src="../assets/wine3.jpg" class="d-block w-100" alt="wine">
+            <img src="./../assets/wine3.jpg" class="d-block w-100" alt="wine">
             </div>
         </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">

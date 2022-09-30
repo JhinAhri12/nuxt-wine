@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <Header />
-        <div class="container">
-            <nuxt />
-        </div>
+       
+        <nuxt />
+
         <WineFooter />
     </div>
 </template>
