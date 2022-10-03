@@ -1,6 +1,6 @@
 <template>
     <div class="wine-details">
-        <Banner />
+        <Banner Page="Details" />
         <WineCard />
     </div>
     

@@ -2,14 +2,15 @@
     <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://cdn.pixabay.com/photo/2018/11/24/13/29/white-wine-3835585_1280.jpg)">
     
         <div class="container">
-            <p><strong>Details</strong></p>
+            <p><strong>{{Page}}</strong></p>
         </div>
     </div>
 
 </template>
 <script>
 export default {
-    name: 'Banner'
+    name: 'Banner',
+    props: { Page: String } 
 }
 </script>
 <style scoped>

@@ -17,3 +17,9 @@ export default {
     }
 }
 </script>
+
+<style>
+.btn-wine{
+    background-color: #ad2533;
+}
+</style>
