@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <Header />
-        <div class="container">
-            <nuxt />
-        </div>
+       
+        <nuxt />
+
         <WineFooter />
     </div>
 </template>
@@ -17,3 +17,9 @@ export default {
     }
 }
 </script>
+
+<style>
+.btn-wine{
+    background-color: #ad2533;
+}
+</style>
