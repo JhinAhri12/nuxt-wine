@@ -21,7 +21,7 @@ p{
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 20px 0;
   
 }
 
