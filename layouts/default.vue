@@ -37,5 +37,13 @@ export default {
 .bg-sable{
     background-color: rgba(251, 243, 229, 0.25);
 }
+.bg-wine{
+    background-color: #a54952;
+    color: white;
+}
+
+.bg-nav{
+    background-color: #8b3e46 !important;
+}
 </style>
 

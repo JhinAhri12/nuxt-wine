@@ -1,5 +1,8 @@
 <template>
     <footer>
-        &copy; Nuxt Wine
+        <div class="bg-wine text-center py-3">
+             &copy; Nuxt Wine
+        </div>
+       
     </footer>
 </template>
