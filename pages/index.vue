@@ -9,7 +9,7 @@
 
           <div class="col-sm-4 pb-4 px-3">
             <div class="card card-services">
-              <img class="card-img-top p-4" src="https://cdn.pixabay.com/photo/2017/02/16/13/42/box-2071537_1280.png" alt="services">
+              <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/02/16/13/42/box-2071537_1280.png" alt="services">
               <div class="card-body">
                 <h3 class="card-title">Livraison</h3>
                 <a href="#" class="btn btn-wine">Se faire livrer</a>
@@ -39,8 +39,19 @@
 
         </div> <!-- fin row -->
 
+        <div class="container pt-4 text-center">
+          <h2 class="color-wine mb-4"><b> Notre sélection de vins </b></h2>
+          <div class="row mx-auto">
+ 
 
-        <h2 class="color-wine mb-4"><b> Notre sélection de vins  </b></h2>
+            <WineIndex
+              v-for="(wine, id) in wines"
+              :key="id"
+              :wine="wine"
+              :data-index="id"
+            />
+          </div>
+        </div>
       </div> <!--fin container -->
 
     </div>
@@ -49,9 +60,33 @@
 </template>
 
 <script>
+import WineIndex from '@/components/WineIndex.vue'
 export default {
-  name: 'IndexPage'
-}
+  name: 'IndexPage',
+  data(){
+    return {
+      wines: ''
+    };
+  },
+  async asyncData({ $axios, error }) {
+        try {
+          const { data } = await $axios.get(
+            'https://my-json-server.typicode.com/JhinAhri12/DBWine/wines?_limit=4'
+                      )
+          return {
+            wines: data
+          }
+        } catch (e) {
+          error({
+            statusCode: 503,
+            message: 'Unable to fetch wine '
+          })
+        }
+      },
+  components: {
+    WineIndex
+  },
+} 
   
 </script>
 
