@@ -39,8 +39,19 @@
 
         </div> <!-- fin row -->
 
+        <div class="container pt-4 text-center">
+          <h2 class="color-wine mb-4"><b> Notre sélection de vins </b></h2>
+          <div class="row mx-auto">
+ 
 
-        <h2 class="color-wine mb-4"><b> Notre sélection de vins  </b></h2>
+            <WineIndex
+              v-for="(wine, id) in wines"
+              :key="id"
+              :wine="wine"
+              :data-index="id"
+            />
+          </div>
+        </div>
       </div> <!--fin container -->
 
     </div>
@@ -49,9 +60,33 @@
 </template>
 
 <script>
+import WineIndex from '@/components/WineIndex.vue'
 export default {
-  name: 'IndexPage'
-}
+  name: 'IndexPage',
+  data(){
+    return {
+      wines: ''
+    };
+  },
+  async asyncData({ $axios, error }) {
+        try {
+          const { data } = await $axios.get(
+            'https://my-json-server.typicode.com/JhinAhri12/DBWine/wines?_limit=4'
+                      )
+          return {
+            wines: data
+          }
+        } catch (e) {
+          error({
+            statusCode: 503,
+            message: 'Unable to fetch wine '
+          })
+        }
+      },
+  components: {
+    WineIndex
+  },
+} 
   
 </script>
 

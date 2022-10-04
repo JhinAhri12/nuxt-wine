@@ -3,11 +3,12 @@
         <div class="card m-3">
             <div class="row">
                 <div class="col-sm-8">
-                    <img src="../assets/banner.jpg" class="img-thumbnail rounded-start" alt="">
+                    <img src="../assets/banner.jpg" class="img-thumbnail m-2" alt="">
                 </div>
                     <div class="col-sm-2">
                         <div class="card-body">
                             <p class="text-muted">Type</p>
+                            <p>{{wine.</p>
                             <p class="text-muted">Years</p>
                             <p class="text-muted">Origin</p>
                         </div>
@@ -33,6 +34,9 @@
 </template>
 <script>
 export default {
-    name: 'WineCard'
+    name: 'WineCard',
+    props: {
+        wine: Object
+      }
 }
 </script>
