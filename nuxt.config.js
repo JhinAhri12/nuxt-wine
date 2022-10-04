@@ -37,6 +37,15 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@pinia/nuxt',
+    {
+      autoImports: [
+        // automatically imports `defineStore`
+        'defineStore', // import { defineStore } from 'pinia'
+        // automatically imports `defineStore` as `definePiniaStore`
+        ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
+      ],
+    },
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
