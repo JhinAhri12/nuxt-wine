@@ -26,6 +26,14 @@
         display: flex;
         align-items: center;
     }
+    .card-img, .card-img-top{
+  border-top-left-radius : initial !important;
+  border-top-right-radius : initial !important;
+}
+.alert {
+  border-bottom-left-radius : initial !important;
+  border-bottom-right-radius : initial !important;
+}
 </style>
  <script>
     export default {
