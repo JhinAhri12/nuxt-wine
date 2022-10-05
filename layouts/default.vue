@@ -41,7 +41,15 @@ export default {
     background-color: #a54952;
     color: white;
 }
-
+.btn-switch-wine{
+    background-color: white;
+    color: #ad2533;
+    border: 1px solid #ad2533;
+}
+.btn-switch-wine:hover{
+    background-color: #ad2533;
+    border: 1px solid white;
+}
 .bg-nav{
     background-color: #8b3e46 !important;
 }

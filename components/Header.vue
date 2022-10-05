@@ -7,8 +7,8 @@
 
             <ul class="nav nav-pills">
                 <li class="nav-item "><a href="./" class="nav-link text-light active bg-nav" aria-current="page">Accueil</a></li>
-                <li class="nav-item"><a href="./about" class="nav-link text-light ">A propos</a></li>
-                <li class="nav-item"><a href="/contact" class="nav-link text-light">Contact</a></li>
+                <li class="nav-item"><a href="../about" class="nav-link text-light ">A propos</a></li>
+                <li class="nav-item"><a href="../contact" class="nav-link text-light">Contact</a></li>
             </ul>
         </header>
         

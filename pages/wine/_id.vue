@@ -1,6 +1,6 @@
 <template>
-    <div class="wine-details">
-        <Banner Page="Details" />
+    <div class="wine-details bg-sable">
+        <Banner Page="Détails" />
         <WineCard :wine="wine" />
     </div>
     

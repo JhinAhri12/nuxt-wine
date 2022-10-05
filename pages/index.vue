@@ -9,7 +9,7 @@
 
           <div class="col-sm-4 pb-4 px-3">
             <div class="card card-services">
-              <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/02/16/13/42/box-2071537_1280.png" alt="services">
+              <img class="card-img-top wine-img" src="https://cdn.pixabay.com/photo/2015/11/06/12/52/roller-1027345__480.jpg" alt="services">
               <div class="card-body">
                 <h3 class="card-title">Livraison</h3>
                 <a href="#" class="btn btn-wine">Se faire livrer</a>
@@ -94,4 +94,6 @@ export default {
 .card-services{
   width: 350px;
 }
+
+
 </style>
